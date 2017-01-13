@@ -1,0 +1,206 @@
+/**
+ * Reset some basic elements
+ */
+* {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Basic styling
+ */
+html {
+  font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
+  color: $black;
+}
+
+body {
+  color: $text-color;
+  background-color: $background-color;
+  font-kerning: normal;
+  line-height: 1.66667;
+}
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+  margin-bottom: $spacing-unit / 2;
+}
+
+/**
+ * Images
+ */
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+/**
+ * Figures
+ */
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: 75%;
+}
+
+/**
+ * Lists
+ */
+ul, ol {
+  margin-left: $spacing-unit;
+}
+
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  color: #30373d;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: $spacing-unit 0 5px;
+}
+
+h1 {
+  font-size: 38px;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 34px;
+  letter-spacing: -1px;
+}
+
+h3 {
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+/**
+ * Links
+ */
+a {
+  color: $accent-color;
+  text-decoration: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+
+  &:visited {
+    color: darken($accent-color, 15%);
+  }
+
+  &:hover {
+    color: $grey-color;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+  font-size: 12px;
+  border: 1px solid $grey-color-light;
+  border-radius: 3px;
+  background-color: #eef;
+  font-family: monospace, serif;
+  padding: 4px 10px;
+  white-space: pre;
+
+  @media screen and (max-width: $small-device) {
+    white-space: normal;
+  }
+
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+a.button {
+  background: $grey-color;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  outline: 0;
+  border: 0;
+
+  &:hover {
+    background-color: $accent-color;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+/**
+ * Wrapper
+ */
+.wrapper {
+  max-width: -webkit-calc(#{$content-width} - #{$spacing-unit});
+  max-width: calc(#{$content-width} - #{$spacing-unit});
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+  @extend %clearfix;
+
+  @media screen and (max-width: $small-device) {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width: calc(#{$content-width} - (#{$spacing-unit}));
+    padding-right: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+  }
+}
+
+/**
+ * Clearfix
+ */
+%clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

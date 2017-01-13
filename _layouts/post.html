@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="post">
+  {% if page.header_image %}
+    <div class="post-list_post_header-image">
+  {% endif %}
+
+  <div class="post_meta">
+    <h2 class="post_meta_title">{{ page.title | escape }}</h2>
+
+    <span class="post_meta_date">{{ page.date | date: "%b %-d, %Y" }}</span>
+  </div>
+
+  {{ page.content }}
+
+</div>

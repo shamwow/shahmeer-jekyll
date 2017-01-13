@@ -1,0 +1,23 @@
+---
+---
+
+$background-color: #30373d;
+$text-color: #606669;
+$accent-color: #27ae60;
+$grey-color: #aeb0b1;
+$grey-color-light: #aeb0b1;
+$black: #30373d;
+
+$content-width: 960px;
+$small-device: 800px;
+$spacing-unit: 30px;
+$nav-height: 45px;
+$home-logo-width: {{ site.logo_width }}px;
+$home-logo-height: {{ site.logo_height }}px;
+
+@import
+  "./animations.scss",
+  "./base.scss",
+  "./layout.scss",
+  "./syntax-highlighting.scss"
+;

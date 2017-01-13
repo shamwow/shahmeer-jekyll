@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <main class="page-content">
+      <div class="wrapper">
+        <div class="main-logo"><a href="/">{% include logo.svg %}</a></div>
+        {{ content }}
+      </div>
+    </main>
+
+  </body>
+
+</html>
