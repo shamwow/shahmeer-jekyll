@@ -1,13 +1,46 @@
+body {
+  padding-bottom: 2 * $spacing-unit;
+}
+
 .page-content {
   padding-top: $nav-height;
 }
 
-.main-logo {
+.about-header_main-logo {
   height: $home-logo-height;
   width: $home-logo-width;
   margin: 2 * $spacing-unit auto;
   display: block;
+  cursor: pointer;
+}
+
+.about-header_slogan {
+  background: $background-color;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 119px;
+  transition: all 0.5s ease;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.about-header_slogan_title {
+  color: white;
+}
+
+.about-header_slogan_subtitle {
+  color: $grey-color-light;
+}
+
+.about-header {
+  position: relative;
   @include fadeInDown(0.3s);
+
+  &:hover .about-header_slogan {
+    opacity: 1;
+  }
 }
 
 /**
@@ -114,9 +147,16 @@ a.site-nav_page-link {
 
 .post {
   background: #fff;
-  padding: $spacing-unit (3 * $spacing-unit) (2 * $spacing-unit);
   border-radius: 2px;
   @include fadeInDown(0.7s);
+}
+
+.post_content {
+  padding: 0(3 * $spacing-unit) (2 * $spacing-unit);
+}
+
+.post_header-image {
+  width: 100%;
 }
 
 .post_meta {
@@ -124,7 +164,11 @@ a.site-nav_page-link {
   margin-bottom: $spacing-unit;
 }
 
-.post_meta_title, .post_meta_title a {
+.post_meta_title {
+  color: $black;
+}
+
+.post_meta_title--link, .post_meta_title--link a {
   color: $black;
 
   &:hover {

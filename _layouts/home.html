@@ -6,30 +6,32 @@ layout: default
   {% for post in site.posts %}
     <div class="post-list_post post">
       {% if post.header_image %}
-        <div class="post-list_post_header-image">
+        <img class="post_header-image" src="/assets/img/post_headers{{post.header_image}}">
       {% endif %}
 
-      <div class="post_meta">
-        <h2 class="post_meta_title">
-          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
+      <div class="post_content">
+        <div class="post_meta">
+          <h2 class="post_meta_title--link">
+            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </h2>
 
-        <span class="post_meta_date">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <span class="post_meta_date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </div>
+
+        {% if post.excerpt and post.excerpt.size < post.content.size %}
+
+          {{ post.excerpt }}
+
+          <span class="post-list_post_read-more">
+            <a class="button" href="{{ post.url | relative_url }}"> Read More</a>
+          </span>
+
+        {% else %}
+
+          {{ post.content }}
+
+        {% endif %}
       </div>
-
-      {% if post.excerpt and post.excerpt.size < post.content.size %}
-
-        {{ post.excerpt }}
-
-        <span class="post-list_post_read-more">
-          <a class="button" href="{{ post.url | relative_url }}"> Read More</a>
-        </span>
-
-      {% else %}
-
-        {{ post.content }}
-
-      {% endif %}
     </div>
   {% endfor %}
 </div>

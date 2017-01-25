@@ -1,12 +1,12 @@
 <header class="header" role="banner">
 
   <div class="wrapper site-nav-wrapper">
-    <div class="site-nav_logo">{% include animated_logo.svg %}</div>
+    <div class="site-nav_logo"><a href="/">{% include animated_logo.svg %}</a></div>
     <nav class="site-nav">
-      <a class="site-nav_page-link" target="_blank" href="https://github.com/shamwow">GitHub</a>
-      <a class="site-nav_page-link" target="_blank" href="https://ca.linkedin.com/pub/shahmeer-navid/41/a16/6b4">LinkedIn</a>
-      <a class="site-nav_page-link" target="_blank" href="mailto:shahmeernavid@gmail.com">Email</a>
-      <a class="site-nav_page-link" target="_blank" href="http://shahmeer.co/resume.pdf">Resume</a>
+      <a class="site-nav_page-link" target="_blank" href="https://github.com/{{ site.github_username }}">GitHub</a>
+      <a class="site-nav_page-link" target="_blank" href="{{ site.linkedin_url }}">LinkedIn</a>
+      <a class="site-nav_page-link" target="_blank" href="mailto:{{ site.email }}">Email</a>
+      <a class="site-nav_page-link" target="_blank" href="{{ "resume.pdf" | relative_url }}">Resume</a>
     </nav>
   </div>
 
