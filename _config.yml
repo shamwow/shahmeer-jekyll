@@ -38,3 +38,5 @@ sass:
 kramdown:
   input: GFM
   hard_wrap: false
+exclude:
+  - save
