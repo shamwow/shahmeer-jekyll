@@ -160,7 +160,11 @@ a.site-nav_page-link {
 }
 
 .post_content {
-  padding: 0(3 * $spacing-unit) (2 * $spacing-unit);
+  padding: 0 (3 * $spacing-unit) (2 * $spacing-unit);
+
+  @media screen and (max-width: $small-device) {
+    padding: 0 ($spacing-unit) ($spacing-unit);
+  }
 }
 
 .post_header-image {

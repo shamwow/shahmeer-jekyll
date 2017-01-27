@@ -126,6 +126,7 @@ a {
   text-decoration: none;
   -webkit-transition: .3s;
   transition: .3s;
+  word-wrap: break-word;
 
   &:visited {
     color: darken($accent-color, 15%);
@@ -141,25 +142,27 @@ a {
 /**
  * Code formatting
  */
-pre,
-code {
+pre, code {
   font-size: 12px;
   border: 1px solid $grey-color-light;
   border-radius: 3px;
   background-color: #eef;
   font-family: monospace, serif;
-  padding: 4px 10px;
   white-space: pre;
-
-  @media screen and (max-width: $small-device) {
-    white-space: normal;
-  }
+  overflow-x: scroll;
 
   > code {
     border: 0;
-    padding-right: 0;
-    padding-left: 0;
+    padding: 0;
   }
+}
+
+pre {
+  padding: 10px 10px;
+}
+
+code {
+  padding: 3px 3px;
 }
 
 a.button {
