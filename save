@@ -1,4 +1,5 @@
 #!/bin/sh
 
+jekyll b;
 rm -r ../$1/*;
 cp -R ./_site/. ../$1/;
