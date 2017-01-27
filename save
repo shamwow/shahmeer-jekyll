@@ -3,3 +3,6 @@
 jekyll b;
 rm -r ../$1/*;
 cp -R ./_site/. ../$1/;
+cd ../$1;
+git add .; git commit -am "Update from jekyll repo"; git push origin master;
+cd -;
