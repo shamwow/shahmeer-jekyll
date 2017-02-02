@@ -30,7 +30,7 @@ setTimeout(() => {
 
 Here, the `setTimeout` is used to mimic the delay that might occur during an async process (like a network call).
 
-So everytime we wanted to perform the above action, we'd need to copy and paste the above code. Of course, we can avoid repeating ourselves by wrapping the code in a function:
+So every time we wanted to perform the above action, we'd need to copy and paste the above code. Of course, we can avoid repeating ourselves by wrapping the code in a function:
 
 {% highlight javascript %}
 const emitAsyncAction = function(ACTION_PAYLOAD) {
@@ -52,7 +52,7 @@ emitAsyncAction(payload);
 
 This looks alright but we will probably not have access to the `dispatch` function where `emitAsyncAction` is defined. We could somehow get around this if we have a singleton store but that introduces more complications if we also want to get server side rendering to work<sup>[[1]](#citation-1)</sup>.
 
-So the easiest appraoch is to just have dispatch be passed into `emitAsyncAction`:
+So the easiest approach is to just have dispatch be passed into `emitAsyncAction`:
 
 {% highlight javascript %}
 const emitAsyncAction = function(dispatch, ACTION_PAYLOAD) {
@@ -98,7 +98,7 @@ this.props.dispatch(asyncActionCreator(payload));
 
 Instead of having a function called `emitAsyncAction`, we have `asyncActionCreator`. Usually an "action" is just an object but we can think of the function returned by `asyncActionCreator` to be an action as well<sup>[[2]](#citation-2)</sup>. So when we dispatch our async action, redux/redux-thunk will execute the function in a context where `dispatch` is available.
 
-And that's it. redux-thunk is basically a form of syntactic sugar to prevent having to pass `dispatch` around. To me, the biggest aesthetic benefit is that dispatching asyncrhonous and synchronous actions look the same with redux-thunk:
+And that's it. redux-thunk is basically a form of syntactic sugar to prevent having to pass `dispatch` around. To me, the biggest aesthetic benefit is that dispatching asynchronous and synchronous actions look the same with redux-thunk:
 
 {% highlight javascript %}
 const asyncActionCreator = function(ACTION_PAYLOAD) {
@@ -127,4 +127,4 @@ If you want to learn how to use redux-thunk, check out some of these links:
  - <a href="https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3#.ffc3zyw1c" target="_blank">https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3#.ffc3zyw1c</a>
 
 [1] [http://redux.js.org/docs/recipes/ServerRendering.html](http://redux.js.org/docs/recipes/ServerRendering.html) <a name="citation-1"></a><br />
-[2] I mean, technicallly, a JS function is an object but you know what I mean.<a name="citation-2"></a>
+[2] I mean, technically, a JS function is an object but you know what I mean.<a name="citation-2"></a>
