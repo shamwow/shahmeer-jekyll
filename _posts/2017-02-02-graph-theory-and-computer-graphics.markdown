@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Graph theory and its relevance to graphics"
+title:  "Triangle strips and Hamiltonian paths"
 date:   2017-02-02 21:43:41 +0800
 categories: math
 header_image: "/graph-theory-and-comp-sci.svg"
 ---
 Graph theory is one of my favorite topics within math. The subject not only offers some pretty fun problems to solve but it also has some important applications in many other fields, not just computer science.
 
-Most of graph theory's computer science applications seem to be related to finding shortest paths though - whether it's for finding the shortest route to a location on a map or it's for finding the shortest path from one node to another in a network. There are a whole bunch of other cool graph theory applications so I decided to write about one that seemed pretty interesting to me: using graph theory to help better represent triangle meshes.
+Most of graph theory's computer science applications seem to be related to finding shortest paths though - whether it's for finding the shortest route to a location on a map or it's for finding the shortest path from one node to another in a network. There are a whole bunch of other cool graph theory applications so I decided to write about one that seemed pretty interesting to me: using graph theory to help determine if a triangle mesh can be represented using a triangle strip.
 
 <!-- read more -->
 
@@ -115,5 +115,3 @@ There are a couple of things I didn't touch on here. For example, I talked about
 [2] <a name="citation-2" traget="_blank" href="https://en.wikipedia.org/wiki/Hamiltonian_path#Bondy.E2.80.93Chv.C3.A1tal_theorem">https://en.wikipedia.org/wiki/Hamiltonian_path"></a><br />
 [3] <a name="citation-3" traget="_blank" href="http://www.rose-hulman.edu/mathjournal/archives/2000/vol1-n1/paper4/v1n1-4pd.PDF">http://www.rose-hulman.edu</a><br />
 [4] <a name="citation-4" traget="_blank" href="https://en.wikipedia.org/wiki/Hamiltonian_path_problem">https://en.wikipedia.org/wiki/Hamiltonian_path_problem</a><br />
-
-
