@@ -3,7 +3,7 @@ layout: post
 title:  "The purpose of redux-thunk"
 date:   2017-01-16 21:43:41 +0800
 categories: react
-header_image: "/redux-thunk.png"
+header_image: "/redux-thunk.svg"
 ---
 The benefit/purpose of the redux-thunk middleware was pretty hard to understand when I was first going through the redux docs, so I thought that writing some things down about it would be a good idea.
 
@@ -126,5 +126,5 @@ If you want to learn how to use redux-thunk, check out some of these links:
  - <a href="https://github.com/gaearon/redux-thunk" target="_blank">https://github.com/gaearon/redux-thunk</a>
  - <a href="https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3#.ffc3zyw1c" target="_blank">https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3#.ffc3zyw1c</a>
 
-[1] [http://redux.js.org/docs/recipes/ServerRendering.html](http://redux.js.org/docs/recipes/ServerRendering.html) <a name="citation-1"></a><br />
+[1] <a name="citation-1" traget="_blank" href="http://redux.js.org/docs/recipes/ServerRendering.html">http://redux.js.org/docs/recipes/ServerRendering.html</a><br />
 [2] I mean, technically, a JS function is an object but you know what I mean.<a name="citation-2"></a>
