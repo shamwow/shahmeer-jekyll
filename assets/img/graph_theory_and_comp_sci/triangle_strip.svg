@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000px" height="300px" viewBox="0 0 1000 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Triangle Strip</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Graph-Theory-and-Comp-Sci-Diagrams">
+            <g id="Triangle-Strip">
+                <rect id="BG" fill="#FFFFFF" x="0" y="0" width="1000" height="300"></rect>
+                <g id="Group" transform="translate(214.000000, 49.000000)" stroke="#979797">
+                    <polygon id="Path-2" points="0.349280904 141.699086 97.304531 30.6728071 282.264878 42.7011755 491.065748 0.65309464 571.514708 94.4163321 410.343674 130.262463 217.4289 119.867085 175.568584 201.499537"></polygon>
+                    <path d="M97.5,30.5 L175.32058,200.886187" id="Path-4"></path>
+                    <path d="M217.5,119.5 L97.4449695,30.8039032" id="Path-5"></path>
+                    <path d="M282.964731,42.763764 L217.5,119.5" id="Path-6"></path>
+                    <path d="M282.5,42.5 L410.363817,130.222352" id="Path-7"></path>
+                    <path d="M491.316102,0.414120432 L410.217729,130.291607" id="Path-8"></path>
+                </g>
+                <text id="v1" font-family="TimesNewRomanPSMT, Times New Roman" font-size="24" font-weight="normal" fill="#8E44AD">
+                    <tspan x="190" y="199">v1</tspan>
+                </text>
+                <text id="v2" font-family="TimesNewRomanPSMT, Times New Roman" font-size="24" font-weight="normal" fill="#8E44AD">
+                    <tspan x="380" y="272">v2</tspan>
+                </text>
+                <text id="v3" font-family="TimesNewRomanPSMT, Times New Roman" font-size="24" font-weight="normal" fill="#8E44AD">
+                    <tspan x="299" y="70">v3</tspan>
+                </text>
+                <text id="v4" font-family="TimesNewRomanPSMT, Times New Roman" font-size="24" font-weight="normal" fill="#8E44AD">
+                    <tspan x="429" y="192">v4</tspan>
+                </text>
+                <text id="v5" font-family="TimesNewRomanPSMT, Times New Roman" font-size="24" font-weight="normal" fill="#8E44AD">
+                    <tspan x="487" y="85">v5</tspan>
+                </text>
+                <text id="v6" font-family="TimesNewRomanPSMT, Times New Roman" font-size="24" font-weight="normal" fill="#8E44AD">
+                    <tspan x="612" y="199">v6</tspan>
+                </text>
+                <text id="v7" font-family="TimesNewRomanPSMT, Times New Roman" font-size="24" font-weight="normal" fill="#8E44AD">
+                    <tspan x="694" y="44">v7</tspan>
+                </text>
+                <text id="v8" font-family="TimesNewRomanPSMT, Times New Roman" font-size="24" font-weight="normal" fill="#8E44AD">
+                    <tspan x="786" y="155">v8</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

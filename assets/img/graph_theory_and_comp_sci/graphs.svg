@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000px" height="300px" viewBox="0 0 1000 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Graph examples</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Graph-Theory-and-Comp-Sci-Diagrams">
+            <g id="Graph-examples">
+                <rect id="BG" fill="#FFFFFF" x="0" y="0" width="1000" height="300"></rect>
+                <g id="Graphs" transform="translate(176.000000, 95.000000)">
+                    <g id="Non-hamiltonian-graph" transform="translate(456.000000, 0.000000)">
+                        <polyline id="Path-9" stroke="#979797" points="7.55063493 7.03304725 95.4092004 7.03575212 185.126159 7.03575212"></polyline>
+                        <path d="M93.6858403,102.5 L93.6858403,7.76609348" id="Path-10" stroke="#979797"></path>
+                        <ellipse id="Oval" fill="#8E44AD" cx="7.08846496" cy="7.08947471" rx="7.08846496" ry="7.08947471"></ellipse>
+                        <ellipse id="Oval" fill="#8E44AD" cx="94.088465" cy="7.08947471" rx="7.08846496" ry="7.08947471"></ellipse>
+                        <ellipse id="Oval" fill="#8E44AD" cx="185.088465" cy="7.08947471" rx="7.08846496" ry="7.08947471"></ellipse>
+                        <ellipse id="Oval" fill="#8E44AD" cx="93.088465" cy="102.089475" rx="7.08846496" ry="7.08947471"></ellipse>
+                    </g>
+                    <g id="hamiltonian-graph">
+                        <polyline id="Path-9" stroke="#333333" stroke-width="2" points="7.55063493 7.03304725 95.4092004 7.03575212 185.126159 7.03575212"></polyline>
+                        <path d="M184.941762,97.1260774 L9.5,9.5" id="Path-10" stroke="#979797"></path>
+                        <path d="M185.274975,95.1618777 L94.5,10.5" id="Path-10" stroke="#979797"></path>
+                        <path d="M184.5,7.5 L186.012373,94.291924" id="Path-11" stroke="#333333" stroke-width="2"></path>
+                        <ellipse id="Oval" fill="#8E44AD" cx="7.08846496" cy="7.08947471" rx="7.08846496" ry="7.08947471"></ellipse>
+                        <ellipse id="Oval" fill="#8E44AD" cx="94.088465" cy="7.08947471" rx="7.08846496" ry="7.08947471"></ellipse>
+                        <ellipse id="Oval" fill="#8E44AD" cx="185.088465" cy="7.08947471" rx="7.08846496" ry="7.08947471"></ellipse>
+                        <ellipse id="Oval" fill="#8E44AD" cx="185.088465" cy="96.0894747" rx="7.08846496" ry="7.08947471"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

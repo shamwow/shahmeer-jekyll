@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000px" height="400px" viewBox="0 0 1000 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Polygon 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Graph-Theory-and-Comp-Sci-Diagrams">
+            <g id="Polygon-1">
+                <rect id="BG" fill="#FFFFFF" x="0" y="0" width="1000" height="400"></rect>
+                <g id="Polygon" transform="translate(500.500000, 200.500000) rotate(-90.000000) translate(-500.500000, -200.500000) translate(354.000000, 27.000000)">
+                    <polygon id="Path-3" stroke="#979797" points="0.547824022 173.266865 65.0779389 5.86526262 228.399009 5.68434189e-14 292.430023 173.266865 228.399009 130.814543 145.954282 346.533731 65.0779389 139.938629"></polygon>
+                    <path d="M65.6114347,6.29712109 L64.7966877,139.554348" id="Line" stroke="#8E44AD" stroke-linecap="square" stroke-linejoin="bevel" stroke-dasharray="1,3,1" opacity="0.478317482"></path>
+                    <path d="M64.7966877,139.554348 L228.048922,0.82951361" id="Line" stroke="#8E44AD" stroke-linecap="square" stroke-linejoin="bevel" stroke-dasharray="1,3,1" opacity="0.478317482"></path>
+                    <path d="M228.365418,1.25724638 L228.365418,130.358582" id="Line" stroke="#8E44AD" stroke-linecap="square" stroke-linejoin="bevel" stroke-dasharray="1,3,1" opacity="0.478317482"></path>
+                    <path d="M228.152294,130.992326 L64.2622551,140.275382" id="Line" stroke="#8E44AD" stroke-linecap="square" stroke-linejoin="bevel" stroke-dasharray="1,3,1" opacity="0.478317482"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
