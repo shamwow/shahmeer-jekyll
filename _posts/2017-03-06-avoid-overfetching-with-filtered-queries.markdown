@@ -131,7 +131,7 @@ Something to keep in mind is that both Relay and the approach above use dynamica
 
 I also haven't discussed GraphQL on other platforms, like Android and iOS. Typically, GraphQL queries are statically written and used to generate classes, allowing GraphQL to integrate well with each platform's type system. This of course makes what we talked about above difficult. Unfortunately, I don't have enough experience with GraphQL on mobile platforms so can't really offer any useful thoughts here.
 
-Going back to REST though, we can achieve what we talked about pretty easily. We can set up our rest endpoint to return fields that is specified through query parameters: `GET /api/waterbottles/101?brand=1,price=1` would return the brand and the price for water bottle with id `101`.
+Going back to REST though, we can achieve what we talked about pretty easily. We can set up our rest endpoint to return fields that is specified through query parameters: `GET /api/waterbottles/101?brand=1&price=1` would return the brand and the price for water bottle with id `101`.
 
 Given existing data for a water bottle, the endpoint string is easy to construct. In fact, most request JavaScript libraries allow query parameters to be specified using an object. A similar situation exists in Java and Objective-C/Swift land.
 
