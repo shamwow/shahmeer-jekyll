@@ -2,8 +2,8 @@
 layout: post
 title:  "Avoiding Overfetching of Data Using 'Filtered' Queries"
 date:   2017-03-06 21:43:41 +0800
-categories: react
-header_image: "/react-avoiding-overfetching.svg"
+categories: graphql
+header_image: "/filtered-queries.svg"
 ---
 GraphQL does a good job of making it easy to fetch only the data you need when making a specific request. A lot has been written about GraphQL and its benefits so I won't get too much into it. Basically, GraphQL queries make it dead simple to specify the data you want from an object.
 
@@ -49,7 +49,7 @@ We can figure out which fields we don't need by using our application state. If 
 
 Our state could look something like:
 
-{% highlight json %}
+{% highlight text %}
 {
   waterbottles: {
     ...
@@ -125,7 +125,7 @@ const QueryBuilder = function(jsonQuery) {
 
 The above code will take a JSON object and include any keys with truthy values in the GraphQL query generated. Of course, this doesn't work completely as there are multiple GraphQL features, like variables and aliases, that aren't accounted for. To come up with a full fledged query builder, we would need a way to encode these features in JSON.
 
-Because `jsonQuery` is a JavaScript object, we can easily diff it against any other JavaScript object, allowing us to perform our optimization. Again, there are some lingering questions, like "how would the diffing look like when the GraphQL query is fetching two different objects?", but they should be solvable with a little bit of design work.
+Because `jsonQuery` is a JavaScript object, we can easily diff it against any other JavaScript object, allowing us to perform our optimization. Again, there are some lingering questions, like "how would the diffing look like when the GraphQL query is fetching two different objects?". These should be solvable with a little bit of design work.
 
 Something to keep in mind is that both Relay and the approach above use dynamically generated queries but there are benefits to having static queries<sup>[[2]](#citation-2)</sup>. GraphQL hasn't really been around long enough so there doesn't seem to be an accepted 'good practice'.
 
@@ -137,5 +137,5 @@ Given existing data for a water bottle, the endpoint string is easy to construct
 
 So while I think the above optimization does have potential to save a lot of bandwidth, it's not an easy win, especially if you're using GraphQL without Relay. Definitely think about whether the performance gains are worth the added complexity before deciding to implement the above ideas.
 
-[1] <a name="citation-1" href="https://github.com/facebook/relay/blob/master/src/traversal/diffRelayQuery.js#L77" target="_blank">https://github.com/facebook/relay/blob/master/src/traversal/diffRelayQuery.js#L77</a>
+[1] <a name="citation-1" href="https://github.com/facebook/relay/blob/master/src/traversal/diffRelayQuery.js#L77" target="_blank">https://github.com/facebook/relay/blob/master/src/traversal/diffRelayQuery.js#L77</a><br />
 [2] <a name="citation-2" href="https://dev-blog.apollodata.com/5-benefits-of-static-graphql-queries-b7fa90b0b69a" target="_blank">https://dev-blog.apollodata.com/5-benefits-of-static-graphql-queries-b7fa90b0b69a</a>
