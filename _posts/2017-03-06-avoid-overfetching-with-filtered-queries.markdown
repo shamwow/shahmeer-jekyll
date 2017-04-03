@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  "Avoiding Overfetching of Data Using 'Filtered' Queries"
+title:  "Avoiding overfetching of data using 'filtered' queries"
 date:   2017-03-06 21:43:41 +0800
-categories: graphql
 header_image: "/filtered-queries.svg"
 ---
 GraphQL does a good job of making it easy to fetch only the data you need when making a specific request. A lot has been written about GraphQL and its benefits so I won't get too much into it. Basically, GraphQL queries make it dead simple to specify the data you want from an object.

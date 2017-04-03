@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  "Triangle strips and Hamiltonian paths"
+title:  "Triangle strips and hamiltonian paths"
 date:   2017-02-02 21:43:41 +0800
-categories: math
 header_image: "/graph-theory-and-comp-sci.svg"
 ---
 Graph theory is one of my favorite topics within math. The subject not only offers some pretty fun problems to solve but it also has some important applications in many other fields, not just computer science.
