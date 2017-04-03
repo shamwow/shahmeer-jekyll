@@ -156,6 +156,7 @@ a.site-nav_page-link {
 .post {
   background: #fff;
   border-radius: 2px;
+  overflow: hidden;
   @include fadeInDown(0.7s);
 }
 
@@ -169,6 +170,14 @@ a.site-nav_page-link {
 
 .post_header-image {
   width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (max-width: $small-device) {
+    height: 250px;
+  }
 }
 
 .post_meta {

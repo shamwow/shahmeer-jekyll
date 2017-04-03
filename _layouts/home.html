@@ -6,7 +6,7 @@ layout: default
   {% for post in site.posts %}
     <div class="post-list_post post">
       {% if post.header_image %}
-        <a href="{{ post.url | relative_url }}"><img class="post_header-image" src="/assets/img/post_headers{{post.header_image}}"></a>
+        <a href="{{ post.url | relative_url }}"><div class="post_header-image" style="background-image: url('/assets/img/post_headers{{post.header_image}}')"></div></a>
       {% endif %}
 
       <div class="post_content">
