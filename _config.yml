@@ -24,6 +24,7 @@ github_username:  shamwow
 excerpt_separator: <!-- read more -->
 logo_height: 119
 logo_width: 57
+permalink: /:title.html
 
 
 # Build settings
