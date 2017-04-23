@@ -24,7 +24,7 @@ So GraphQL makes it easy to fetch only the data you want. Often times though, th
 
 ![Amazon water bottle search](/assets/img/avoid_overfetching_filtered_queries/waterbottle-amazon.png)
 
-Here, we have a page with a series of water bottles along with their brands, capacity, and prices (simplified and among other things). When you click on one of the water bottles, the water bottle product page is opened, showing more information about the water bottle. Assuming we have a single page app, what usually ends up happening is that another request for the selected water bottle is made:
+Here, we have a page with a series of water bottles along with their brands, capacity, and prices (simplified and among other things). When you click on one of the bottles, a product page is opened, showing more information about the bottle. Assuming we have a single page app, what usually ends up happening is that another request for the selected water bottle is made:
 
 {% highlight graphql %}
 {
@@ -78,7 +78,7 @@ So we know we already have capacity, brand, and price. Our query for the water b
 }
 {% endhighlight %}
 
-It turns out that Relay already does this!<sup>[[1]](#citation-1)</sup> If you're using GraphQL but not using Relay though, there's a little more work involved. The approach that would work with most GraphQL clients would be to implement a query builder. The output of the query builder can then be passed into any client. For illustrative purposes, a very simplistic one in JavaScript might look like:
+It turns out that Relay already does this<sup>[[1]](#citation-1)</sup> If you're using GraphQL but not using Relay though, there's a little more work involved. The approach that would work with most GraphQL clients would be to implement a query builder. The output of the query builder can then be passed into any client. For illustrative purposes, a very simplistic one in JavaScript might look like:
 
 {% highlight javascript %}
 
@@ -136,5 +136,6 @@ Given existing data for a water bottle, the endpoint string is easy to construct
 
 So while I think the above optimization does have potential to save a lot of bandwidth, it's not an easy win, especially if you're using GraphQL without Relay. Definitely think about whether the performance gains are worth the added complexity before deciding to implement the above ideas.
 
-[1] <a name="citation-1" href="https://github.com/facebook/relay/blob/master/src/traversal/diffRelayQuery.js#L77" target="_blank">https://github.com/facebook/relay/blob/master/src/traversal/diffRelayQuery.js#L77</a><br />
+[1] <a name="citation-1" href="https://github.com/facebook/relay/blob/master/packages/react-relay/classic/traversal/diffRelayQuery.js#L77" target="_blank">https://github.com/facebook/relay/blob/master/packages/react-relay/classic/traversal/diffRelayQuery.js#L77</a><br />
 [2] <a name="citation-2" href="https://dev-blog.apollodata.com/5-benefits-of-static-graphql-queries-b7fa90b0b69a" target="_blank">https://dev-blog.apollodata.com/5-benefits-of-static-graphql-queries-b7fa90b0b69a</a>
+
