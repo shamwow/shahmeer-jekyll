@@ -66,6 +66,11 @@ figcaption {
   font-size: 75%;
 }
 
+hr {
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
+}
+
 /**
  * Lists
  */

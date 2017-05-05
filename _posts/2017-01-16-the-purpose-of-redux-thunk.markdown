@@ -117,13 +117,15 @@ this.props.dispatch(asyncActionCreator(payload));
 this.props.dispatch(syncActionCreator(payload));
 {% endhighlight %}
 
-There are some other posts out there that help explain why redux-thunk exists, most notably this <a href="http://stackoverflow.com/questions/35411423/how-to-dispatch-a-redux-action-with-a-timeout/35415559#35415559" target="_blank">stackoverflow answer</a>. The answer gives a few other reasons why redux-thunk exists but, to be honest, I found most of them poorly explained and/or unconvincing. Regardless, you should check it out and judge for yourself.
+There are some other posts out there that help explain why redux-thunk exists, most notably this <a href="http://stackoverflow.com/questions/35411423/how-to-dispatch-a-redux-action-with-a-timeout/35415559#35415559" target="_blank">stackoverflow answer</a>. Definitely check it out.
 
 If you want to learn how to use redux-thunk, check out some of these links:
 
  - <a href="http://redux.js.org/docs/advanced/AsyncActions.html" target="_blank">http://redux.js.org/docs/advanced/AsyncActions.html</a>
  - <a href="https://github.com/gaearon/redux-thunk" target="_blank">https://github.com/gaearon/redux-thunk</a>
  - <a href="https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3#.ffc3zyw1c" target="_blank">https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3#.ffc3zyw1c</a>
+
+----
 
 [1] <a name="citation-1" traget="_blank" href="http://redux.js.org/docs/recipes/ServerRendering.html">http://redux.js.org/docs/recipes/ServerRendering.html</a><br />
 [2] I mean, technically, a JS function is an object but you know what I mean.<a name="citation-2"></a>

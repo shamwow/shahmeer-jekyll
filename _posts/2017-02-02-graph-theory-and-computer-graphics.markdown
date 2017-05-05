@@ -110,6 +110,8 @@ Kind of a bummer right? Regardless, it's pretty cool to me that something like H
 
 There are a couple of things I didn't touch on here. For example, I talked about triangulations assuming we already had one. What if we're given an arbitrary polygon and have to compute the triangulation? How many triangulations exist for a polygon and so all their corresponding dual graphs contain Hamiltonian paths? If you're interested, these questions and more are discussed in <a traget="_blank" href="https://www.palfrader.org/research/misc/2011-tristrips.pdf">this paper</a>.
 
+----
+
 [1] <a name="citation-1" traget="_blank" href="http://hacksoflife.blogspot.sg/2010/01/to-strip-or-not-to-strip.html">http://hacksoflife.blogspot.sg/2010/01/to-strip-or-not-to-strip.html</a><br />
 [2] <a name="citation-2" traget="_blank" href="https://en.wikipedia.org/wiki/Hamiltonian_path#Bondy.E2.80.93Chv.C3.A1tal_theorem">https://en.wikipedia.org/wiki/Hamiltonian_path</a><br />
 [3] <a name="citation-3" traget="_blank" href="http://www.rose-hulman.edu/mathjournal/archives/2000/vol1-n1/paper4/v1n1-4pd.PDF">http://www.rose-hulman.edu</a><br />

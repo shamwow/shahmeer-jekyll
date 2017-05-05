@@ -136,6 +136,8 @@ Given existing data for a water bottle, the endpoint string is easy to construct
 
 Some notes. If you're using GraphQL (Relay or not), strongly consider static queries<sup>[[3]](#citation-3)</sup>. Even if you don't use Relay, you can still precompile these and have your request payload just be an identifier rather than sending up the entire GraphQL query. You can also optimize the amount of data you fetch by having different static queries and doing something similar to Relay's `RefetchContainer`. Regardless though, in almost all cases sending along some more data with a request isn't going to be the main bottleneck. Something like actually initiating the request will be. So if you're going to make a a request for data, sending along some more probably won't hurt performance too much. This can obviously differ on a case by case basis so, as with everything, understand your situation before taking action.
 
+----
+
 [1] <a name="citation-1" href="https://github.com/facebook/relay/blob/master/packages/react-relay/classic/traversal/diffRelayQuery.js#L77" target="_blank">https://github.com/facebook/relay/blob/master/packages/react-relay/classic/traversal/diffRelayQuery.js#L77</a><br />
 [2] <a name="citation-2" href="https://facebook.github.io/relay/docs/refetch-container.html" target="_blank">https://facebook.github.io/relay/docs/refetch-container.html</a><br />
 [3] <a name="citation-3" href="https://dev-blog.apollodata.com/5-benefits-of-static-graphql-queries-b7fa90b0b69a" target="_blank">https://dev-blog.apollodata.com/5-benefits-of-static-graphql-queries-b7fa90b0b69a</a><br />
