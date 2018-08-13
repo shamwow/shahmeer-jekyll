@@ -82,8 +82,9 @@ type Handler<
 
 interface RouterMethod<Method extends HttpMethod> {
   // I wanted to keep route definitions the same as they would be with vanilla express
-  // but also wanted to be able to type whether or not the user object is defined - hence 
-  // the multiple definitions in this interface.
+  // but also wanted to be able to type whether or not the user object is defined. The multiple 
+  // definitions here are to support the arbitrary number of middleware that express allows
+  // in route definitions while still typing authenticated routes properly.
 
   <Path extends keyof AppApiDef[Method]>(
     path: Path,
@@ -130,7 +131,7 @@ interface RouterMethod<Method extends HttpMethod> {
     handler: Handler<AppApiDef[Method][Path], 'populate'>,
   ): void;
   
-  // More definitions like the ones above.
+  // More definitions like the ones above to support more middleware.
 }
 
 export class Router {
