@@ -81,10 +81,11 @@ type Handler<
 ) => Promise<Def['response']>;
 
 interface RouterMethod<Method extends HttpMethod> {
-  // I wanted to keep route definitions the same as they would be with vanilla express
-  // but also wanted to be able to type whether or not the user object is defined. The multiple 
-  // definitions here are to support the arbitrary number of middleware that express allows
-  // in route definitions while still typing authenticated routes properly.
+  // I wanted to keep route definitions the same as they would be with 
+  //vanilla express but also wanted to be able to type whether or not the user 
+  // object is defined. The multiple definitions here are to support the 
+  // arbitrary number of middleware that express allows in route definitions 
+  // while still typing authenticated routes properly.
 
   <Path extends keyof AppApiDef[Method]>(
     path: Path,
@@ -159,8 +160,8 @@ export class Router {
       this.router[method](
         path.toString(),
         ...(<any>middlewareAndHandler),
-        // AsyncFunc just wraps the async function passed in to return a 500 error
-        // code if something goes wrong.
+        // AsyncFunc just wraps the async function passed in to return a 500 
+        // error code if something goes wrong.
         AsyncFunc(async function(req, res) {
           const { status, data } = <any>await handler(
             {
@@ -217,8 +218,8 @@ const get = async function<Path extends keyof AppApiDef['GET']>(
   // The result could also be one of these and we should handle the error cases.
   // Even though the url for the API request is statically checked for, this 404 
   // needs to be included because authenticated routes can return a 404 (see above). 
-  // We could avoid this by explicitly passing in a user object to this method but it 
-  // hasn't been a source of errors for me so I haven't bothered.
+  // We could avoid this by explicitly passing in a user object to this method 
+  // but it hasn't been a source of errors for me so I haven't bothered.
   | { status: 404; data: void }
   | { status: 500; data: void }
 > {
