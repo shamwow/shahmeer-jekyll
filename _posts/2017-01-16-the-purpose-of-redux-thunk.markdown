@@ -2,7 +2,7 @@
 layout: post
 title:  "The purpose of redux-thunk"
 date:   2017-01-16 21:43:41 +0800
-header_image: "/redux-thunk.svg"
+header_image: "/redux_thunk.svg"
 ---
 The benefit/purpose of the redux-thunk middleware was pretty hard to understand when I was first going through the redux docs, so I thought that writing some things down about it would be a good idea.
 

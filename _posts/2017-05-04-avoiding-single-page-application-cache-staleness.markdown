@@ -2,7 +2,7 @@
 layout: post
 title:  "Avoiding single page application cache staleness"
 date:   2017-05-04 21:43:41 +0800
-header_image: "/avoiding-cache-staleness.svg"
+header_image: "/avoiding_cache_staleness.svg"
 ---
 
 There are a ton of frameworks and libraries out there that address different aspects of single page application (SPA) development. However, <i>when</i> to update a client's cache seems to get neglected<sup>[[1]](#citation-1)</sup>.

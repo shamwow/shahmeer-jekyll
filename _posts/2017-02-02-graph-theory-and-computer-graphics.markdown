@@ -2,7 +2,7 @@
 layout: post
 title:  "Triangle strips and hamiltonian paths"
 date:   2017-02-02 21:43:41 +0800
-header_image: "/graph-theory-and-comp-sci.svg"
+header_image: "/graph_theory_and_comp_sci.svg"
 ---
 Graph theory is one of my favorite topics within math. The subject not only offers some pretty fun problems to solve but it also has some important applications in many other fields, not just computer science.
 
@@ -22,7 +22,7 @@ The naive way to represent triangles meshes is to simply include each vertex of 
 
 If you look at the mesh above, you'll notice that the triangles share vertices. The above is actually a triangle strip and can be represented using something like:
 
-{% highlight obj %}
+```
 
 v1_x v1_y v1_z
 v2_x v2_y v2_z
@@ -33,13 +33,13 @@ v6_x v6_y v6_z
 v7_x v7_y v7_z
 v8_x v8_y v8_z
 
-{% endhighlight %}
+```
 
 Only the first triangle in the strip needs to have all its vertices declared. Each subsequent triangle can be defined with just one additional vertex. Formally, a triangle strip is a series of triangles where each pair of consecutive triangles share an edge.
 
 This is pretty good compared to the naive representation, which uses 18 vertices compared just 8 vertices:
 
-{% highlight obj %}
+```
 
 # Triangle 1
 v1_x v1_y v1_z
@@ -71,7 +71,7 @@ v6_x v6_y v6_z
 v8_x v8_y v8_z
 v7_x v7_y v7_z
 
-{% endhighlight %}
+```
 
 Aside: If you're paying attention, you'll notice that the order of the vertices is kind of weird. This is because the front face of the triangle needs to be known for things like culling. OpenGL uses the order the vertices are declared in, either clockwise or counter clockwise, to determine where the front face of the triangle is. You can read more about it <a traget="_blank" href="https://www.khronos.org/opengl/wiki/Face_Culling">here</a>.
 

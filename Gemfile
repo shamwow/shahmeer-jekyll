@@ -22,3 +22,6 @@ gem "minima", "~> 2.0"
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
 end
+
+# Added at 2018-08-12 21:52:00 -0700 by shahmeernavid:
+gem "pygments.rb", "~> 1.2"

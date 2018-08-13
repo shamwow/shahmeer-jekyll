@@ -2,13 +2,13 @@
 layout: post
 title:  "Avoiding overfetching of data using 'filtered' queries"
 date:   2017-03-06 21:43:41 +0800
-header_image: "/filtered-queries.svg"
+header_image: "/filtered_queries.svg"
 ---
 Updated on May 1st, 2017.
 
 GraphQL does a good job of making it easy to fetch only the data you need when making a specific request. A lot has been written about GraphQL and its benefits so I won't get too much into it. Basically, GraphQL queries make it dead simple to specify the data you want from an object.
 
-{% highlight graphql %}
+```
 # An example GraphQL query fetching just the brand, capacity, and price for all water bottles that are blue.
 {
   waterbottles(color: "blue") {
@@ -18,7 +18,7 @@ GraphQL does a good job of making it easy to fetch only the data you need when m
     price
   }
 }
-{% endhighlight %}
+```
 
 Note that you could definitely achieve the same thing with a typical REST endpoint and query parameters.
 
@@ -28,7 +28,7 @@ So GraphQL makes it easy to fetch only the data you want. Often times though, th
 
 Here, we have a page with a series of water bottles along with their brands, capacity, and prices (simplified and among other things). When you click on one of the bottles, a product page is opened, showing more information about the bottle. Assuming we have a single page app, what usually ends up happening is that another request for the selected water bottle is made:
 
-{% highlight graphql %}
+```
 {
   waterbottle(id: 101) {
     capacity
@@ -38,7 +38,7 @@ Here, we have a page with a series of water bottles along with their brands, cap
     ...WaterBottleReviews
   }
 }
-{% endhighlight %}
+```
 
 We already had the capacity, brand, and price of this water bottle so it's inefficient to query for it again. In this example, the amount of duplicated data is pretty small. But it's not hard to imagine a scenario where we make a request for all the reviews of a water bottle despite already having this data in memory. This has the potential to use up a lot of unnecessary bandwidth.
 
@@ -50,7 +50,7 @@ We can figure out which fields we don't need by using our application state. If 
 
 Our state could look something like:
 
-{% highlight text %}
+```
 {
   waterbottles: {
     ...
@@ -67,18 +67,18 @@ Our state could look something like:
     ...
   },
 }
-{% endhighlight %}
+```
 
 So we know we already have capacity, brand, and price. Our query for the water bottle's product page then only needs to be:
 
-{% highlight graphql %}
+```
 {
   waterbottle(id: 101) {
     description
     ...WaterBottleReviews
   }
 }
-{% endhighlight %}
+```
 
 It turns out that Relay Classic already does this.<sup>[[1]](#citation-1)</sup> Relay Modern also has support for this via the `RefetchContainer`<sup>[[2]](#citation-2)</sup>. If you're using GraphQL but not using Relay though, there's a little more work involved. The approach that would work with most GraphQL clients would be to implement a query builder. The output of the query builder can then be passed into any client. For illustrative purposes, a very simplistic one in JavaScript might look like:
 
