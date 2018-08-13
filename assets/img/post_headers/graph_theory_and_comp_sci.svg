@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000px" height="300px" viewBox="0 0 1000 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Graph Theory and Comp Sci</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="42.6829584%" y1="-18.5700595%" x2="94.7277052%" y2="134.619758%" id="linearGradient-1">
+            <stop stop-color="#8E44AD" offset="0%"></stop>
+            <stop stop-color="#8C52D2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Graph-Theory-and-Comp-Sci">
+            <rect id="BG" fill="url(#linearGradient-1)" x="0" y="0" width="1000" height="300"></rect>
+            <g id="icon-graphql" transform="translate(413.000000, 52.000000)" fill="#FFFFFF">
+                <g id="Layer_1">
+                    <g id="_Group_">
+                        <path d="M86.8645161,177.223714 L14.2503226,137.935429 L14.2503226,58.9608571 L86.8645161,19.6725714 L159.47871,58.9608571 L159.47871,137.935429 L86.8645161,177.223714 Z M19.9277419,134.524 L86.8645161,170.571429 L153.80129,134.353429 L153.80129,62.5428571 L86.8645161,26.1542857 L19.9277419,62.5428571 L19.9277419,134.524 Z" id="_Compound_Path_2"></path>
+                        <ellipse id="_Path_" cx="17.0890323" cy="57.3688571" rx="17.0890323" ry="17.114"></ellipse>
+                        <ellipse id="_Path_2" cx="156.64" cy="57.3688571" rx="17.0890323" ry="17.114"></ellipse>
+                        <ellipse id="_Path_3" cx="156.64" cy="139.3" rx="17.0890323" ry="17.114"></ellipse>
+                        <ellipse id="_Path_4" cx="17.0890323" cy="139.3" rx="17.0890323" ry="17.114"></ellipse>
+                        <ellipse id="_Path_5" cx="86.8645161" cy="178.702" rx="17.0890323" ry="17.114"></ellipse>
+                        <ellipse id="_Path_6" cx="86.8645161" cy="17.114" rx="17.0890323" ry="17.114"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

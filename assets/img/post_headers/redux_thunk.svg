@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000px" height="300px" viewBox="0 0 1000 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Redux Thunk</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="42.6829584%" y1="-18.5700595%" x2="94.7277052%" y2="134.619758%" id="linearGradient-1">
+            <stop stop-color="#8E44AD" offset="0%"></stop>
+            <stop stop-color="#8C52D2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Redux-Thunk">
+            <rect id="BG" fill="url(#linearGradient-1)" x="0" y="0" width="1000" height="300"></rect>
+            <text id="thunk!" font-family="TimesNewRomanPSMT, Times New Roman" font-size="100" font-weight="normal" fill="#FFFFFF">
+                <tspan x="369" y="184">thunk!</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
